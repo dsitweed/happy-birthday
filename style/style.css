@@ -5,11 +5,13 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .container {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   margin: 0 auto;
   text-align: center;
   visibility: hidden;
@@ -118,15 +120,17 @@ body {
 
 .six img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 650px;
   height: auto;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
-  left: 41.5%;
+  top: 162px;
+  left: 47.5%;
   /* transform: scale(0.1); */
 }
 
@@ -230,6 +234,7 @@ body {
 #replay {
   z-index: 3;
   cursor: pointer;
+  color: rgb(21, 161, 237);
 }
 
 /* Media Queries */

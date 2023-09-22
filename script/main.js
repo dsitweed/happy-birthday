@@ -19,7 +19,7 @@ const fetchData = () => {
         // Run amimation if so
         if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
           animationTimeline();
-        } 
+        }
       });
     });
 };
