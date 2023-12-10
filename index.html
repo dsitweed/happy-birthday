@@ -58,19 +58,20 @@
         </p>
       </div>
       <div class="six">
-        <img
-          src="img/lydia2.png"
-          alt=""
-          class="lydia-dp"
-          data-node-name="imagePath"
-        />
-        <img src="img/hat.svg" alt="" class="hat" />
         <div class="wish">
           <h3 class="wish-hbd" data-node-name="wishHeading">Happy Birthday!</h3>
           <h5 data-node-name="wishText">
             May the js.prototypes always be with you! ;)
           </h5>
         </div>
+        <img
+          src="img/lydia2.png"
+          alt=""
+          class="lydia-dp"
+          data-node-name="imagePath"
+          width="470px"
+          height="470px"
+        />
       </div>
       <div class="seven">
         <div class="baloons">
@@ -147,9 +148,46 @@
         </p>
         <p class="last-smile" data-node-name="outroSmiley">:)</p>
       </div>
+      <div class="musicContainer">
+        <audio id="backgroundMusic" loop autoplay>
+          <source src="/music/17.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <img
+          id="handleMusic"
+          src="img/music-play.svg"
+          alt=""
+          width="40"
+          height="40"
+          onclick="playMusic"
+        />
+      </div>
     </div>
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script type="application/javascript" src="script/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var audio = document.getElementById("backgroundMusic");
+      var playButton = document.getElementById("handleMusic");
+
+      playButton.addEventListener("click", function () {
+        if (audio.paused) {
+          audio.play();
+          playButton.textContent = "Pause Music";
+        } else {
+          audio.pause();
+          playButton.textContent = "Play Music";
+        }
+      });
+
+      // handle page refreshes - But ineffective
+      window.onload = function () {
+        audio.volume = 1.0;
+        audio.currentTime = 0;
+        audio.play();
+      };
+    });
+  </script>
 </html>

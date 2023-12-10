@@ -1,10 +1,9 @@
 {
   "greeting": "Hế lu",
   "name": "Bob",
-  "greetingText": "Tên đẹp btw!",
-  "wishText": "Sắp 12h rồi thôi đi ngủ thôi !",
-  "imagePath": "img/main.jpg",
-  "text1": "Hôm nay 15-12 sinh nhật của em !!! :D",
+  "greetingText": "Tên đẹp keke!",
+  "imagePath": "img/main_4.jpg",
+  "text1": "Hôm nay 15-12 sinh nhật của em !!! (^▽^)",
   "textInChatBox": "Happy birthday!! Chúc em xinh đẹp, thành công bla blah...",
   "sendButtonLabel": "Gửi",
   "text2": "Đó là những điều anh định làm.",
@@ -13,11 +12,12 @@
   "text4Adjective": "Đặc Biệt",
   "text5Entry": "Bởi vì,",
   "text5Content": "Em là người đặc biệt",
-  "smiley": ":)",
+  "smiley": "❥",
   "bigTextPart1": "Vậy",
   "bigTextPart2": "Nên",
   "wishHeading": "Happy Birthday!",
-  "outroText": "Hết rồi, nếu thích thì hãy cho xin 1 like và 1 subcribe! :D",
+  "wishText": "Chúc em đạt được nhiều thành công, nắm bắt được những cơ hội mới tuyệt vời trên  hành trình mới.\nMong rằng em luôn vui vẻ lạc quan, em xứng đáng nhận được tất cả những điều tốt đẹp nhất trong cuộc sống. !",
+  "outroText": "Hết rồi, nếu thích thì hãy cho xin 1 like và 1 subcribe! (｡>﹏<｡)",
   "replayText": "Hoặc bấm vào đây để xem lại cũng được.",
-  "outroSmiley": ":)"
+  "outroSmiley": ":V"
 }

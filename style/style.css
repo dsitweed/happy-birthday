@@ -9,6 +9,15 @@ body {
   color: white;
 }
 
+.musicContainer {
+  z-index: 100;
+  width: 80px;
+}
+
+#handleMusic:hover {
+  cursor: pointer;
+}
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -17,6 +26,7 @@ body {
   visibility: hidden;
   position: relative;
   overflow: hidden;
+
 }
 
 .container div.six {
@@ -51,7 +61,7 @@ body {
 }
 
 .two {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   font-weight: lighter;
 }
 
@@ -120,8 +130,8 @@ body {
 
 .six img {
   display: inline-block;
-  max-width: 650px;
-  height: auto;
+  width: auto;
+  height: 70vh;
   object-fit: cover;
   border-radius: 16px;
 }
@@ -129,7 +139,7 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: 162px;
+  top: 224px;
   left: 47.5%;
   /* transform: scale(0.1); */
 }
@@ -217,13 +227,14 @@ body {
 .wish-hbd {
   font-size: 3em;
   margin: 0;
+  margin-top: -20px;
   text-transform: uppercase;
 }
 
 .wish h5 {
   font-weight: lighter;
   font-size: 2rem;
-  margin: 10px 0 0;
+  margin: 10px 0 24px 0;
 }
 
 .nine p {
@@ -238,29 +249,24 @@ body {
 }
 
 /* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
+@media screen and (max-width: 1500px) {
+  .six img {
+    height: 65vh ;
   }
 }
 
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
+@media screen and (max-width: 800px) {
+  .six img {
+    height: 60vh ;
   }
 }
 
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
+@media screen and (max-width: 400px) {
+  .six img {
+    height: 50vh ;
   }
 }
 
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
 
 @media screen and (max-width: 500px) {
   .container {
